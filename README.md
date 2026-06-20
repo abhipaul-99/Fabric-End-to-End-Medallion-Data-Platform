@@ -1,4 +1,4 @@
-🚀 Microsoft Fabric End-to-End Medallion Data Platform
+# 🚀 Microsoft Fabric End-to-End Medallion Data Platform
 
 A production-style Microsoft Fabric Data Engineering project implementing the Medallion Architecture (Bronze, Silver, Gold) to ingest, transform, and serve data from multiple sources, including SQL Server and Excel, powering enterprise-grade Power BI reporting.
 

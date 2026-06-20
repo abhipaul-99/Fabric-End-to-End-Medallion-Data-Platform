@@ -29,6 +29,8 @@ Implement monitoring and alerting
 Support multiple business teams with governed access
 🏗️ Solution Architecture
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8b4d84e8-c816-4da9-a594-2dd1e6007c76" />
+
 🏅 Medallion Architecture
 Bronze Layer
 

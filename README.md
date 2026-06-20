@@ -28,45 +28,7 @@ Create reusable Semantic Models
 Implement monitoring and alerting
 Support multiple business teams with governed access
 🏗️ Solution Architecture
-┌─────────────────┐      ┌─────────────────┐
-│   Excel Files   │      │ SQL Server DB   │
-└────────┬────────┘      └────────┬────────┘
-         │                        │
-         └──────────┬─────────────┘
-                    │
-                    ▼
-      ┌───────────────────────────┐
-      │      Dataflow Gen2        │
-      │    Fabric Pipelines       │
-      └─────────────┬─────────────┘
-                    │
-                    ▼
-      ┌───────────────────────────┐
-      │      Bronze Lakehouse     │
-      │       Raw Data Layer      │
-      └─────────────┬─────────────┘
-                    │
-                    ▼
-      ┌───────────────────────────┐
-      │      Silver Warehouse     │
-      │  Cleansed & Standardized  │
-      └─────────────┬─────────────┘
-                    │
-                    ▼
-      ┌───────────────────────────┐
-      │       Gold Warehouse      │
-      │ Business Ready Data Layer │
-      └─────────────┬─────────────┘
-                    │
-                    ▼
-      ┌───────────────────────────┐
-      │      Semantic Model       │
-      └─────────────┬─────────────┘
-                    │
-                    ▼
-      ┌───────────────────────────┐
-      │      Power BI Reports     │
-      └───────────────────────────┘
+
 🏅 Medallion Architecture
 Bronze Layer
 

@@ -1,6 +1,6 @@
 🚀 Microsoft Fabric End-to-End Medallion Data Platform
 
-A production-style Microsoft Fabric Data Engineering project implementing the Medallion Architecture (Bronze, Silver, Gold) to ingest, transform, and serve data from multiple sources including SQL Server and Excel, powering enterprise-grade Power BI reporting.
+A production-style Microsoft Fabric Data Engineering project implementing the Medallion Architecture (Bronze, Silver, Gold) to ingest, transform, and serve data from multiple sources, including SQL Server and Excel, powering enterprise-grade Power BI reporting.
 
 📌 Project Overview
 
@@ -13,20 +13,19 @@ Automated
 Reliable
 Easy to monitor
 Enterprise-ready
-🎯 Business Scenario
 
+🎯 Business Scenario
 A client currently uses Excel-based reports and wants to modernize their analytics platform using Microsoft Fabric.
 
 Requirements
-Ingest data from:
-SQL Server (On-Premises)
-Excel Files
+Ingest data from: SQL Server (On-Premises) & Excel Files
 Implement Medallion Architecture
 Automate daily data refresh
 Build Power BI reports
 Create reusable Semantic Models
 Implement monitoring and alerting
 Support multiple business teams with governed access
+
 🏗️ Solution Architecture
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8b4d84e8-c816-4da9-a594-2dd1e6007c76" />
@@ -69,9 +68,7 @@ Storage:
 Fabric Warehouse
 Gold Layer
 
-Purpose:
-
-Business-ready analytics layer
+Purpose: Business-ready analytics layer
 
 Activities:
 
@@ -80,9 +77,8 @@ KPI calculations
 Reporting datasets
 Star schema optimization
 
-Storage:
+Storage: Fabric Warehouse
 
-Fabric Warehouse
 🔧 Technologies Used
 Technology	Purpose
 Microsoft Fabric	Unified Analytics Platform
@@ -96,6 +92,7 @@ Power BI	Reporting
 SQL Server	Source System
 Excel	Source System
 On-Premises Gateway	Connectivity
+
 📂 Data Sources
 Source 1: SQL Server
 AdventureWorks Database
@@ -107,58 +104,52 @@ Source 2: Excel Files
 Sales Reports
 Customer Information
 Product Information
+
 ⚙️ Data Ingestion Approaches
 Method 1: Dataflow Gen2
 
 Used for:
-
 Excel ingestion
 Lightweight transformations
 Rapid development
+
 Method 2: Fabric Data Pipeline
 
 Used for:
-
 SQL Server ingestion
 Batch processing
 Scheduled execution
 Automated orchestration
+
 🔄 Pipeline Workflow
-Step 1
+Step 1:
 
 Extract data from:
-
 SQL Server
 Excel Files
-Step 2
+
+Step 2:
 
 Load raw data into:
-
 Bronze Lakehouse
-Step 3
+
+Step 3:
 
 Apply cleansing and validation:
-
 Silver Warehouse
-Step 4
+
+Step 4:
 
 Create reporting datasets:
-
 Gold Warehouse
-Step 5
 
-Build Semantic Model
+Step 5: Build Semantic Model
 
-Step 6
+Step 6: Refresh Power BI Reports
 
-Refresh Power BI Reports
-
-Step 7
-
-Send alerts if refresh fails
+Step 7: Send alerts if refresh fails
 
 📊 Semantic Model
-
 The Semantic Model acts as the business layer between the Gold Warehouse and Power BI.
 
 Benefits:
@@ -190,13 +181,11 @@ Execute daily refreshes
 Trigger transformations
 Update Semantic Models
 Refresh Power BI Reports
-Schedule
-Daily
-06:00 AM
-🚨 Monitoring & Alerting
+Schedule Daily 06:00 AM
+
+🚨 Monitoring & Alerting:
 
 Implemented monitoring capabilities include:
-
 Pipeline Failure Alerts
 Data Refresh Monitoring
 Execution Logs
@@ -215,7 +204,8 @@ Role-Based Access Control (RBAC)
 Semantic Model Permissions
 Workspace Security
 Gateway Authentication
-📊 Key Features
+
+📊 Key Features:
 
 ✅ Multi-source data ingestion
 
@@ -254,6 +244,7 @@ Data Quality Framework
 CI/CD Deployment
 Fabric Notebooks Integration
 Machine Learning Integration
+
 👨‍💻 Author
 
 Abhishek Paul
@@ -261,3 +252,7 @@ Abhishek Paul
 Senior Associate | Data Engineer
 
 Skills: Microsoft Fabric, Azure Data Factory, Databricks, PySpark, SQL, Power BI, Data Engineering
+
+## Acknowledgements
+
+This project was built as part of my hands-on learning journey with Microsoft Fabric, following concepts demonstrated in the VJ Tech Talks Microsoft Fabric Project Series. Additional enhancements, documentation, architecture design, and implementation details were customized and extended beyond the original tutorial.
